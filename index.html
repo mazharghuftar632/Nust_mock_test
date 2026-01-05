@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST NET Mock Test (Fixed)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        body { font-family: 'Verdana', sans-serif; margin: 0; padding: 0; background-color: #fff; font-size: 14px; user-select: none; overflow: hidden; }
+        
+        /* --- HEADER --- */
+        .top-header { display: flex; justify-content: space-between; padding: 5px 10px; border-bottom: 2px solid #ccc; font-weight: bold; height: 30px; align-items: center; }
+        .subject-name { color: #008080; text-decoration: underline; cursor: pointer; }
+        .test-category { color: #cc0000; text-align: center; font-size: 12px; }
+        .center-id { color: #cc0000; font-size: 12px; }
+
+        /* --- BLUE BARS --- */
+        .blue-bar {
+            background: linear-gradient(to bottom, #dcebf7 0%, #a2c6e5 100%);
+            border: 1px solid #6699cc; padding: 4px 10px; font-weight: bold; color: #000066;
+            display: flex; justify-content: space-between; align-items: center; font-size: 12px;
+        }
+
+        /* --- MAIN LAYOUT --- */
+        .main-container { display: flex; height: calc(100vh - 105px); padding: 5px; box-sizing: border-box; }
+        .content-area { flex: 1; display: flex; flex-direction: column; margin-right: 5px; }
+        
+        /* Question Area */
+        .question-box { border: 1px solid #999; padding: 10px; height: 140px; overflow-y: auto; margin-bottom: 5px; font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; background: #fff; }
+
+        /* Options */
+        .options-container { margin-top: 5px; overflow-y: auto; flex: 1; border: 1px solid #ccc; padding: 5px; }
+        .option-row { border: 1px solid #999; padding: 8px; margin-bottom: 4px; display: flex; align-items: center; background: #fff; cursor: pointer; font-size: 13px; }
+        .option-row:hover { background: #eef; }
+        .option-row input { margin-right: 10px; }
+
+        /* Photo Section */
+        .photo-area { width: 130px; border: 2px solid #cc3333; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #fff5f5; text-align: center; height: 150px; }
+
+        /* --- FOOTER --- */
+        .footer { position: fixed; bottom: 0; width: 100%; height: 65px; background: #f0f0f0; border-top: 2px solid #336699; display: flex; align-items: center; justify-content: space-between; padding: 0 5px; box-sizing: border-box; }
+
+        /* Timer */
+        .timer-box { background: #009933; color: white; border: 2px solid #006600; width: 120px; height: 50px; padding: 2px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 11px; }
+        .timer-val { font-size: 18px; font-weight: bold; display: flex; align-items: center; gap: 5px; }
+        .start-time { background: #e0e0e0; color: black; padding: 1px 5px; margin-bottom: 2px; width: 100%; text-align: center; }
+
+        /* Finish Link */
+        .finish-link { color: blue; font-weight: bold; cursor: pointer; text-decoration: underline; position: absolute; left: 50%; transform: translateX(-50%); font-size: 12px; }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 3px; margin-right: 10px; }
+        .nav-btn {
+            width: 50px; height: 45px; border-radius: 3px; cursor: pointer;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            font-size: 9px; border: 1px solid #003366; color: white;
+            background: linear-gradient(to bottom, #7aa7d6 0%, #3a6da0 100%);
+        }
+        .nav-btn i { font-size: 16px; margin-bottom: 2px; }
+        .nav-btn:active { transform: translateY(1px); }
+
+        /* Button Colors */
+        .btn-grey { background: linear-gradient(to bottom, #f0f0f0 0%, #d0d0d0 100%); color: black; border: 1px solid #999; }
+        .btn-yellow { background: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%); border: 1px solid #d58512; }
+
+        /* Result Screen */
+        #result-screen { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.95); z-index: 2000; flex-direction: column; align-items: center; justify-content: center; }
+        .result-box { border: 3px solid #003366; padding: 30px; text-align: center; background: white; width: 400px; box-shadow: 0 0 20px rgba(0,0,0,0.2); }
+    </style>
+</head>
+<body>
+
+<div id="result-screen">
+    <div class="result-box">
+        <h1 style="color: #003366; margin-top: 0;">Test Summary</h1>
+        <hr>
+        <p>Total Questions: <b id="res-total"></b></p>
+        <p>Attempted: <b id="res-attempted"></b></p>
+        <p style="font-size: 20px; color: green;">Your Score: <b id="res-score"></b></p>
+        <button onclick="clearSession()" style="padding: 10px 20px; background: #cc0000; color: white; border: none; cursor: pointer; margin-top: 20px;">Close & Reset</button>
+    </div>
+</div>
+
+<div class="top-header">
+    <div class="subject-name">Mathematics (Engineering)</div>
+    <div class="test-category">NET Simulation Exam</div>
+    <div class="center-id">NUST-ISB (Center-1)</div>
+</div>
+
+<div class="main-container">
+    <div class="content-area">
+        <div class="blue-bar">
+            <span>Question No: <span id="q-curr">1</span> of <span id="q-total">20</span></span>
+            <span>Marks: 1 &nbsp; <input type="checkbox" checked disabled> Photograph</span>
+        </div>
+
+        <div class="question-box">
+            <strong style="text-decoration: underline;">Question:</strong><br><br>
+            <span id="q-text">Loading Question...</span>
+        </div>
+
+        <div class="blue-bar" style="margin-top: 5px;">
+            <span>Answer (Please select your correct option)</span>
+            <span id="save-status" style="font-size: 10px; padding: 2px 5px; background: #ccc; border-radius: 3px;">Not Saved</span>
+        </div>
+
+        <div class="options-container" id="options-box">
+            </div>
+    </div>
+
+    <div class="photo-area">
+        <i class="fas fa-user" style="font-size: 60px; color: #ccc;"></i>
+        <br><b>Candidate<br>Image</b>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="timer-box">
+        <div class="start-time" id="start-display">--:--</div>
+        <div class="timer-val">
+            <span id="timer-display">180</span> <i class="far fa-clock" style="font-size: 14px;"></i>
+        </div>
+        <div style="font-size: 9px;">Minutes Remaining</div>
+    </div>
+
+    <div class="finish-link" onclick="finishTest()">Click here to FINISH Your Test</div>
+
+    <div class="btn-group">
+        <button class="nav-btn btn-grey" onclick="saveData()"><i class="fas fa-save"></i> Save</button>
+        <button class="nav-btn" onclick="moveNext()"><i class="fas fa-caret-right"></i> Next</button>
+        <button class="nav-btn" onclick="movePrev()"><i class="fas fa-caret-left"></i> Prev</button>
+        <button class="nav-btn btn-grey" onclick="markReview()"><i class="fas fa-file-alt"></i> Review</button>
+        
+        <div style="width: 15px;"></div> <button class="nav-btn" onclick="alert('Subject switching not implemented in demo')"><i class="fas fa-share"></i> Next<br>Sec</button>
+        <button class="nav-btn" onclick="alert('Subject switching not implemented in demo')"><i class="fas fa-reply"></i> Prev<br>Sec</button>
+        
+        <button class="nav-btn btn-grey" onclick="jumpTo(0)"><i class="fas fa-step-backward"></i> First</button>
+        <button class="nav-btn btn-grey" onclick="jumpTo(questions.length-1)"><i class="fas fa-step-forward"></i> Last</button>
+        
+        <button class="nav-btn btn-yellow" onclick="alert('Help: Select an option and click Save.')"><i class="fas fa-question-circle"></i> Help</button>
+    </div>
+</div>
+
+<script>
+    // --- 1. QUESTIONS DATABASE ---
+    const questions = [
+        { q: "If $f(x) = x^2 + 2$, find $f'(x)$.", o: ["$2x$", "$x^2$", "$2$", "$0$"], a: 0 },
+        { q: "The matrix $\\begin{bmatrix} 1 & 0 \\\\ 0 & 1 \\end{bmatrix}$ is called:", o: ["Null Matrix", "Identity Matrix", "Singular Matrix", "Rectangular Matrix"], a: 1 },
+        { q: "Evaluate: $\\lim_{x \\to 0} \\frac{\\sin x}{x}$", o: ["0", "1", "Infinity", "Undefined"], a: 1 },
+        { q: "Which of these is a scalar quantity?", o: ["Force", "Velocity", "Speed", "Acceleration"], a: 2 },
+        { q: "The value of $i^{4}$ is:", o: ["1", "-1", "i", "-i"], a: 0 }
+    ];
+
+    // --- 2. VARIABLES & STATE ---
+    let currIdx = 0;
+    // Load saved data or empty object
+    let userResp = JSON.parse(localStorage.getItem('nust_resp')) || {}; 
+    let reviewList = JSON.parse(localStorage.getItem('nust_rev')) || {};
+
+    // --- 3. TIMER LOGIC (ABSOLUTE TIME FIX) ---
+    function startTimer() {
+        const DURATION_MINS = 180;
+        let targetTime = localStorage.getItem('nust_target_time');
+        let startTimeTxt = localStorage.getItem('nust_start_txt');
+
+        if (!targetTime) {
+            // First time load: Set target 3 hours from NOW
+            const now = new Date();
+            targetTime = now.getTime() + (DURATION_MINS * 60 * 1000);
+            localStorage.setItem('nust_target_time', targetTime);
+
+            // Save visual start time
+            startTimeTxt = now.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+            localStorage.setItem('nust_start_txt', startTimeTxt);
+        }
+
+        document.getElementById('start-display').innerText = "Start: " + startTimeTxt;
+
+        // Update every second
+        setInterval(() => {
+            const now = new Date().getTime();
+            const diff = targetTime - now;
+
+            if (diff <= 0) {
+                document.getElementById('timer-display').innerText = "00";
+                finishTest(true); // Time Over
+                return;
+            }
+
+            const mins = Math.floor(diff / (1000 * 60));
+            document.getElementById('timer-display').innerText = mins;
+
+            // Optional: Red color if less than 10 mins
+            if(mins < 10) document.querySelector('.timer-box').style.background = "#cc0000";
+
+        }, 1000);
+    }
+
+    // --- 4. RENDER QUESTION ---
+    function renderQ() {
+        const qData = questions[currIdx];
+        document.getElementById('q-curr').innerText = currIdx + 1;
+        document.getElementById('q-total').innerText = questions.length;
+        document.getElementById('q-text').innerHTML = qData.q;
+
+        // Status Update
+        const statusEl = document.getElementById('save-status');
+        if(userResp[currIdx] !== undefined) {
+            statusEl.innerText = "Saved";
+            statusEl.style.background = "#5cb85c"; // Green
+            statusEl.style.color = "white";
+        } else if (reviewList[currIdx]) {
+            statusEl.innerText = "Review";
+            statusEl.style.background = "#f0ad4e"; // Orange
+            statusEl.style.color = "white";
+        } else {
+            statusEl.innerText = "Not Answered";
+            statusEl.style.background = "#d9534f"; // Red
+            statusEl.style.color = "white";
+        }
+
+        // Render Options
+        const container = document.getElementById('options-box');
+        container.innerHTML = "";
+        
+        qData.o.forEach((opt, i) => {
+            const isChecked = (userResp[currIdx] === i) ? "checked" : "";
+            const rowColor = (isChecked) ? "#e6ffe6" : "#fff";
+            
+            container.innerHTML += `
+                <label class="option-row" style="background:${rowColor}" onclick="highlightRow(this)">
+                    <input type="radio" name="ans" value="${i}" ${isChecked}>
+                    <span>${opt}</span>
+                </label>
+            `;
+        });
+
+        if(window.MathJax) MathJax.typeset();
+    }
+
+    // UI Effect only (Does not save)
+    window.highlightRow = function(el) {
+        // Reset all backgrounds
+        document.querySelectorAll('.option-row').forEach(d => d.style.background = "#fff");
+        // Highlight clicked
+        el.style.background = "#e6ffe6";
+        // Check the radio inside
+        el.querySelector('input').checked = true;
+    }
+
+    // --- 5. BUTTON FUNCTIONS ---
+    
+    function saveData() {
+        // Get selected radio
+        const selected = document.querySelector('input[name="ans"]:checked');
+        if(selected) {
+            userResp[currIdx] = parseInt(selected.value);
+            localStorage.setItem('nust_resp', JSON.stringify(userResp));
+            
+            // Visual Feedback
+            const statusEl = document.getElementById('save-status');
+            statusEl.innerText = "Saved";
+            statusEl.style.background = "#5cb85c"; 
+            statusEl.style.color = "white";
+        }
+    }
+
+    function moveNext() {
+        if(currIdx < questions.length - 1) {
+            currIdx++;
+            renderQ();
+        }
+    }
+
+    function movePrev() {
+        if(currIdx > 0) {
+            currIdx--;
+            renderQ();
+        }
+    }
+
+    function jumpTo(idx) {
+        currIdx = idx;
+        renderQ();
+    }
+
+    function markReview() {
+        reviewList[currIdx] = true;
+        localStorage.setItem('nust_rev', JSON.stringify(reviewList));
+        renderQ(); // refresh status bar
+    }
+
+    function finishTest(force = false) {
+        if(!force && !confirm("Are you sure you want to FINISH the test?")) return;
+
+        // Calculate Result
+        let score = 0;
+        let attempted = Object.keys(userResp).length;
+        
+        questions.forEach((q, i) => {
+            if(userResp[i] === q.a) score++;
+        });
+
+        // Show Overlay
+        document.getElementById('res-total').innerText = questions.length;
+        document.getElementById('res-attempted').innerText = attempted;
+        document.getElementById('res-score').innerText = score;
+        document.getElementById('result-screen').style.display = 'flex';
+    }
+
+    function clearSession() {
+        // Reset everything for new test
+        localStorage.removeItem('nust_target_time');
+        localStorage.removeItem('nust_start_txt');
+        localStorage.removeItem('nust_resp');
+        localStorage.removeItem('nust_rev');
+        location.reload();
+    }
+
+    // Initialize
+    startTimer();
+    renderQ();
+
+</script>
+</body>
+</html>
