@@ -169,7 +169,7 @@
             font-size: 11px; 
         }
         .timer-val { 
-            font-size: 18px; 
+            font-size: 16px; 
             font-weight: bold; 
             display: flex; 
             align-items: center; 
@@ -267,6 +267,19 @@
             color: #003366; flex-direction: column;
         }
 
+        /* Jump Input */
+        .jump-box {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 10px;
+        }
+        .jump-box input {
+            width: 30px;
+            margin: 0 5px;
+            text-align: center;
+        }
+
         /* --- RESPONSIVE DESIGN --- */
         @media (max-width: 768px) {
             .top-header { flex-direction: column; align-items: center; padding: 10px 5px; }
@@ -276,6 +289,7 @@
             .footer { flex-direction: column; height: auto; padding: 10px 5px; }
             .nav-btn { width: 45px; height: 40px; }
             .finish-link { position: static; transform: none; margin: 6px 0; text-align: center; display: block; order: 2; }
+            .jump-box { display: none; } /* Hide jump on mobile to save space */
         }
         @media (max-width: 480px) {
             .question-box { height: auto; padding: 10px 5px; }
@@ -340,14 +354,19 @@
     <div class="timer-box">
         <div class="start-time" id="start-display">--:--</div>
         <div class="timer-val">
-            <span id="timer-display">180</span> <i class="far fa-clock" style="font-size: 14px;"></i>
+            <span id="timer-display">180:00</span> <i class="far fa-clock" style="font-size: 14px;"></i>
         </div>
-        <div style="font-size: 9px;">Minutes Remaining</div>
+        <div style="font-size: 9px;">HH : MM : SS</div>
     </div>
 
     <div class="finish-link" onclick="finishTest()">Click here to FINISH Your Test</div>
 
     <div class="btn-group">
+        <div class="jump-box">
+            Go to: <input type="number" id="jump-input" min="1" max="200">
+            <button onclick="jumpToInput()" style="cursor:pointer;">Go</button>
+        </div>
+
         <button class="nav-btn btn-grey" onclick="saveData()"><i class="fas fa-save"></i> Save</button>
         <button class="nav-btn" onclick="moveNext()"><i class="fas fa-caret-right"></i> Next</button>
         <button class="nav-btn" onclick="movePrev()"><i class="fas fa-caret-left"></i> Prev</button>
@@ -376,14 +395,13 @@
     let reviewList = JSON.parse(localStorage.getItem('nust_rev')) || {};
 
     // --- 1. PROFESSIONAL CSV PARSING FUNCTION ---
-    // Parses CSV lines correctly even if they contain commas inside quotes
     function parseCSVLine(str) {
         const result = [];
         let cell = '';
         let quote = false;
         for (let i = 0; i < str.length; i++) {
             let char = str[i];
-            if (char === '"' && str[i+1] === '"') { cell += '"'; i++; } // Double quote
+            if (char === '"' && str[i+1] === '"') { cell += '"'; i++; } 
             else if (char === '"') { quote = !quote; }
             else if (char === ',' && !quote) { result.push(cell); cell = ''; }
             else { cell += char; }
@@ -395,7 +413,6 @@
     // --- 2. FETCH DATA FROM FILE ---
     async function loadQuestionsFromFile() {
         try {
-            // NOTE: 'questions.csv' must be in the same folder on GitHub
             const response = await fetch('questions.csv');
             
             if(!response.ok) {
@@ -404,7 +421,6 @@
 
             const data = await response.text();
             
-            // Convert CSV text to Array
             const rows = data.split('\n');
             const parsedQuestions = [];
 
@@ -415,45 +431,40 @@
 
                 const cols = parseCSVLine(rowRaw);
                 
-                // Ensure row has enough columns (Sr, Question, A, B, C, D, Ans)
                 if(cols.length < 7) continue;
 
-                // Determine Subject based on Row Number (Sr No.)
-                // As per your file structure: 1-100 Math, 101-160 Physics, 161+ English
                 const srNo = parseInt(cols[0]);
+                
+                // --- FIXED LOGIC FOR SUBJECTS (1-100 Math, 101-160 Phy, 161+ Eng) ---
                 let subject = "English";
-                if (srNo <= 100) subject = "Mathematics";
-                else if (srNo <= 160) subject = "Physics";
+                if (srNo >= 1 && srNo <= 100) subject = "Mathematics";
+                else if (srNo >= 101 && srNo <= 160) subject = "Physics";
+                else if (srNo >= 161) subject = "English";
 
-                // Parse Correct Answer (Expected format: "a. option..." or just "option")
-                // We check if the Correct Answer Text matches Option A, B, C or D
+                // Answer Detection
                 let ansIndex = -1;
                 const correctText = cols[6].trim().toLowerCase();
                 
-                // Simple logic: Check first character 'a.', 'b.' or match text
                 if (correctText.startsWith("a") || correctText === cols[2].trim().toLowerCase()) ansIndex = 0;
                 else if (correctText.startsWith("b") || correctText === cols[3].trim().toLowerCase()) ansIndex = 1;
                 else if (correctText.startsWith("c") || correctText === cols[4].trim().toLowerCase()) ansIndex = 2;
                 else if (correctText.startsWith("d") || correctText === cols[5].trim().toLowerCase()) ansIndex = 3;
 
-                // If still not found, default to A (safety)
                 if (ansIndex === -1) ansIndex = 0;
 
                 parsedQuestions.push({
-                    id: srNo, // Use Sr No as ID
+                    id: srNo, 
                     sub: subject,
-                    q: cols[1], // Question Column
-                    o: [cols[2], cols[3], cols[4], cols[5]], // Options
+                    q: cols[1], 
+                    o: [cols[2], cols[3], cols[4], cols[5]], 
                     a: ansIndex
                 });
             }
 
             allQuestions = parsedQuestions;
             
-            // Remove loading screen
             document.getElementById('loading-screen').style.display = 'none';
             
-            // Start App
             loadSection(subjectList[0]);
             startTimer();
 
@@ -484,7 +495,7 @@
         loadSection(subjectList[currentSubjectIndex]);
     }
 
-    // --- 4. RENDER QUESTION (WITH MATHJAX SUPPORT) ---
+    // --- 4. RENDER QUESTION ---
     function renderQ() {
         if(activeQuestions.length === 0) {
             document.getElementById('q-text').innerText = "No questions found in this section.";
@@ -497,10 +508,8 @@
         document.getElementById('q-curr').innerText = currIdx + 1;
         document.getElementById('q-total').innerText = activeQuestions.length;
         
-        // Inject HTML (Allows MathJax to see the $)
         document.getElementById('q-text').innerHTML = qData.q;
 
-        // Status Update
         const statusEl = document.getElementById('save-status');
         if(userResp[globalId] !== undefined) {
             statusEl.innerText = "Saved";
@@ -516,7 +525,6 @@
             statusEl.style.color = "white";
         }
 
-        // Render Options
         const container = document.getElementById('options-box');
         container.innerHTML = "";
         
@@ -532,7 +540,6 @@
             `;
         });
 
-        // RE-RENDER MATHJAX
         if(window.MathJax) {
             MathJax.typesetPromise([document.getElementById('q-text'), container])
                 .catch((err) => console.log('MathJax error:', err));
@@ -564,7 +571,7 @@
             currIdx++;
             renderQ();
         } else {
-            alert("End of section. Click 'Next Sec'.");
+            alert("End of section. Click 'Next Sec' or check Review.");
         }
     }
 
@@ -588,6 +595,37 @@
         renderQ(); 
     }
 
+    // New Function: Jump to Specific Question ID
+    function jumpToInput() {
+        const val = parseInt(document.getElementById('jump-input').value);
+        if(!val) return;
+
+        // Find which subject this ID belongs to
+        let targetSub = "";
+        if(val >= 1 && val <= 100) targetSub = "Mathematics";
+        else if(val >= 101 && val <= 160) targetSub = "Physics";
+        else if(val >= 161) targetSub = "English";
+        else { alert("Question ID out of range"); return; }
+
+        // Switch Subject
+        currentSubjectIndex = subjectList.indexOf(targetSub);
+        loadSection(targetSub);
+
+        // Find index in active array
+        const foundIdx = activeQuestions.findIndex(q => q.id === val);
+        if(foundIdx !== -1) {
+            currIdx = foundIdx;
+            renderQ();
+        }
+    }
+
+    // New Function: Keyboard Shortcuts
+    document.addEventListener('keydown', function(event) {
+        if(event.key === "ArrowRight") moveNext();
+        if(event.key === "ArrowLeft") movePrev();
+        if(event.key === "Enter") saveData();
+    });
+
     function finishTest(force = false) {
         if(!force && !confirm("Are you sure you want to FINISH?")) return;
         let score = 0;
@@ -609,9 +647,9 @@
         location.reload();
     }
 
-    // --- 6. TIMER ---
+    // --- 6. TIMER (FIXED: Shows HH:MM:SS) ---
     function startTimer() {
-        const DURATION_MINS = 180;
+        const DURATION_MINS = 180; // 3 Hours
         let targetTime = localStorage.getItem('nust_target_time');
         let startTimeTxt = localStorage.getItem('nust_start_txt');
 
@@ -627,19 +665,34 @@
         setInterval(() => {
             const now = new Date().getTime();
             const diff = targetTime - now;
+            
             if (diff <= 0) {
-                document.getElementById('timer-display').innerText = "00";
+                document.getElementById('timer-display').innerText = "00:00:00";
                 finishTest(true); 
                 return;
             }
-            const mins = Math.floor(diff / (1000 * 60));
-            document.getElementById('timer-display').innerText = mins;
-            if(mins < 10) document.querySelector('.timer-box').style.background = "#cc0000";
+
+            // Calculate hours, minutes, seconds
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            // Formatting to 00:00:00
+            const displayStr = 
+                (hours < 10 ? "0" + hours : hours) + ":" + 
+                (minutes < 10 ? "0" + minutes : minutes) + ":" + 
+                (seconds < 10 ? "0" + seconds : seconds);
+
+            document.getElementById('timer-display').innerText = displayStr;
+            
+            // Visual Warning for last 10 mins
+            if(diff < 10 * 60 * 1000) {
+                document.querySelector('.timer-box').style.background = "#cc0000";
+            }
         }, 1000);
     }
 
     // --- INITIALIZE ---
-    // Start by loading the file
     loadQuestionsFromFile();
 
 </script>
