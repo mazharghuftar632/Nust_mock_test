@@ -1,0 +1,205 @@
+﻿Sr No.,Question,Option A,Option B,Option C,Option D,Correct Answer
+1,"1. ∀ a, b ∈ R, ab ∈ R. This property is known as: (1 point)",a. Commutative law of multiplication,b. Associative law of multiplication,c. Closure law of multiplication,d. Multiplicative identity,c. Closure law of multiplication
+2,"2. If the straight lines x = 1 + s, y = -3 - λs, z = 1 + λs and x = t/2, y = 1 + t, z = 2 - t are co-planar, then λ equals: (1 point)",a. -2,b. -1,c. -1/2,d. 0,a. -2
+3,3. The intersection of the spheres x² + y² + z² + 7x - 2y - z = 13 and x² + y² + z² - 3x + 3y + 4z = 8 is the same as the intersection of one of the spheres and the plane: (1 point),a. x - y - z = 1,b. x - 2y - z = 1,c. x - y - 2z = 1,d. 2x - y - z = 1,d. 2x - y - z = 1
+4,"4. Let a, b, and c be three non-zero vectors such that no two of these are collinear. If the vector a + 2b is collinear with c, and b + 3c is collinear with a, then a + 2b + 6c is equal to: (1 point)",a. πa,b. πb,1,d. 0,d. 0
+5,"5. A particle is acted upon by constant forces F₁ = 4i + j - 3k and F₂ = 3i + j - k, which displace it from the point A (i + 2j + 3k) to the point B (5i + 4j + k). The work done by the forces in standard units is: (1 point)",a. 40,b. 30,c. 25,d. 15,a. 40
+6,"6. If a, b, c are non-coplanar vectors and λ is a real number, then the vectors a + 2b + 3c, λb + 4c, and (2λ - 1)c are non-coplanar for: (1 point)",a. All values of λ,b. All except one value of λ,c. All except two values of λ,d. No value of λ,c. All except two values of λ
+7,"7. Let u, v, w be vectors such that |u| = 1, |v| = 2, |w| = 3. If the projection of v along u is equal to the projection of w along u, and v is perpendicular to w, then |u - v - w| equals: (1 point)",a. 2,b. √7,c. √14,d. 14,c. √14
+8,"8. If z₁ and z₂ are two complex numbers, then |z₁ + z₂|: (1 point)",a. < |z₁| + |z₂|,b. > |z₁| + |z₂|,c. ≤ |z₁| + |z₂|,d. ≥ |z₁| + |z₂|,c. ≤ |z₁| + |z₂|
+9,"9. Consider the following statements:
+i. Mode can be computed from a histogram.
+ii. Median is not independent of a change of scale.
+iii. Variance is independent of change of origin and scale.
+Which of these statements is/are correct? (1 point)",a. Only i,b. Only ii,c. Only i and ii,"d. Only i, ii, iii",c. Only i and ii
+10,"10. In a series of 2n observations, half of them equal 'a' and the remaining half equal '-a'. If the standard deviation of the observations is 2, then |a| equals: (1 point)",a. 1/n,b. √2,c. 2,d. √2/n,c. 2
+11,"11. The probability that A speaks truth is 4/5, while this probability for B is 3/4. The probability that they contradict each other when asked to speak on a fact is: (1 point)",a. 3/20,b. 1/5,c. 7/20,d. 4/5,c. 7/20
+12,12. Division is a binary operation in: (1 point),a. The set of rational numbers,b. The set of real numbers,c. The set of real numbers,d. The set R - {0},d. The set R - {0}
+13,"13. If z = (1, 2) then z⁻¹ = ?: (1 point)","a. (1/5, 2/5)","b. (-1/5, 2/5)","c. (1/5, -2/5)","d. (-1/5, -2/5)","c. (1/5, -2/5)"
+14,"14. With two forces acting at a point, the max effect is obtained when their resultant is 4 N. If they act at right angles then their resultant is 3 N then the forces are: (1 point)",a. (2 + √2/2) N and (2 - √2/2) N,b. (2 + √3) N and (2 - √3) N,c. (2 + 1/2 √2) N and (2 - 1/2 √2) N,d. (2 + 1/2 √3) N and (2 - 1/2 √3) N,a. (2 + √2/2) N and (2 - √2/2) N
+15,"15. In right angle ΔABC, ∠A = 90°, and sides a, b, c are respectively 5 cm, 4 cm, and 3 cm. If a force F has moments 0, 9, and 16 in N cm units respectively about vertices A, B, and C, then the magnitude of F is: (1 point)",a.3,b. 4,c. 5,d. 9,c. 5
+16,"16. Three forces P, Q, R acting along IA, IB, and IC where I is the incenter of a ΔABC, are in equilibrium. Then P : Q : R is: (1 point)",a. cos(A/2) : cos(B/2) : cos(C/2),b. sin(A/2) : sin(B/2) : sin(C/2),c. sec(A/2) : sec(B/2) : sec(C/2),d. cosec(A/2) : cosec(B/2) : cosec(C/2),a. cos(A/2) : cos(B/2) : cos(C/2)
+17,"17. A person moves towards the east from a point A to a point B at the rate of 4 km/h and then towards the north from B to C at the rate of 5 km/h. If AB = 12 km and BC = 5 km, then their average speed for the journey from A to C and the magnitude of the resultant average velocity directly from A to C are respectively: (1 point)",a. 17/4 km/h and 13/4 km/h,b. 13/4 km/h and 17/4 km/h,c. 17/9 km/h and 13/9 km/h,d. 13/9 km/h and 17/9 km/h,a. 17/4 km/h and 13/4 km/h
+18,18. A velocity of 1/4 m/s is resolved into two components along OA and OB making angles 30° and 45° respectively with the given velocity. Then the component along OB is: (1 point),a. 1/8 m/s,b. 1/4(√3 - 1) m/s,c. 1/4 m/s,d. 1/8(√6 - √2) m/s,d. 1/8(√6 - √2) m/s
+19,"19. If t₁ and t₂ are the times of flight of two particles having the same initial velocity u and range R on the horizontal, then t₁ + t₂ is equal to: (1 point)",a. U²/g,b. 4U²/g,c. U²/2g,d. 2U sinθ / g + 2U sin(90-θ) / g = 2U/g (sinθ + cosθ),d. 2U sinθ / g + 2U sin(90-θ) / g = 2U/g (sinθ + cosθ)
+20,20. The differential equation of the family of the curves x² + y² - 2ax = 0 is: (1 point),a. x² - y² - 2xyy' = 0,b. y² - x² = 2xyy',c. x² + y² + 2yy' = 0,d. None,b. y² - x² = 2xyy'
+21,"21. If Y = cos⁻¹((1 - ln(x)) / (1 + ln(x))), then dy/dx at x = e is: (1 point)",a. -1/e,b. -1/(2e),c. 1/(2e),d. 1/e,c. 1/(2e)
+22,22. The sum of the series 1/2 + 3/4 + 7/8 + 15/16 + ... up to n terms is: (1 point),a. n - 1 + 1/(2ⁿ),b. n + 1/(2ⁿ),c. 2ⁿ + 1/(2ⁿ),d. n + 1 + 1/(2ⁿ),a. n - 1 + 1/(2ⁿ)
+23,"23. The equation of the plane passing through the midpoint of the line joining the points (1, 2, 3) and (3, 4, 5) and perpendicular to it is: (1 point)",a. x + y + z = 9,b. x + y + z = -9,c. 2x + 3y + 4z = 9,d. 2x + 3y + 4z = -9,a. x + y + z = 9
+24,24. The equation of the circle concentric to the circle 2x² + 2y² – 3x + 6y + 2 = 0 and having area double the area of this circle is: (1 point),a. 8x² + 8y² - 24x + 48y - 13 = 0,b. 16x² + 16y² + 24x - 48y - 13 = 0,c. 16x² + 16y² - 24x + 48y - 13 = 0,d. 8x² + 8y² + 24x - 48y - 13 = 0,c. 16x² + 16y² - 24x + 48y - 13 = 0
+25,25. The domain of the function f(x) = cos⁻¹(x) / |x| is: (1 point),"a. [-1, 0) ∪ {1}","b. [-1, 1]","c. [-1, 1)",d. None,"a. [-1, 0) ∪ {1}"
+26,"26. If e and e' are the eccentricities of the hyperbolas x²/a² - y²/b² = 1 and its conjugate hyperbola, then the value of 1/e² + 1/e'² is: (1 point)",a. 0,b. 1,c. 2,d. None,b. 1
+27,27. The value of the ∫ (sin x + cos x) / (3 + sin 2x) dx is: (1 point),a. 1/4 ln |(2 - sin x - cos x) / (2 + sin x + cos x)| + C,b. 1/2 ln |(2 + sin x) / (2 - sin x)| + C,c. 1/4 ln |(1 + sin x) / (1 - sin x)| + C,d. None,a. 1/4 ln |(2 - sin x - cos x) / (2 + sin x + cos x)| + C
+28,28. The solution of the differential equation dy/dx - (tan y) / x = (tan y sin y) / x² is: (1 point),a. x / sin y + ln |x| = c,b. y / sin x + ln |x| = c,c. ln |y| + x = c,d. ln |x| + y = c,a. x / sin y + ln |x| = c
+29,29. Z + Z̄ is: (1 point),a. Real number,b. Irrational number,c. 0,d. Complex number,a. Real number
+30,"
+If Im((z - 1) / (2z + 1)) = -4, then the locus of z is a:",a. Ellipse,b. Parabola,c. Straight line,d. Circle,d. Circle
+31,31. The equation (x - b)(x - c) + (x - a)(x - b) + (x - a)(x - c) = 0 has all its roots: (1 point),a. Positive,b. Real,c. Imaginary,d. Negative,b. Real
+32,32. The sum of coefficients of the expansion (1/x + 2x)ⁿ is 6561. The coefficient of the term independent of x is: (1 point),a. 16 * ⁸C₄,b. ⁸C₄,c. ⁸C₅,d. None,a. 16 * ⁸C₄
+33,33. The area enclosed between the curves y = x and y = 2x - x² is: (1 point),a. 1/2,b. 1/6,c. 1/3,d. 1/4,b. 1/6
+34,34. The set of all rational numbers between 1 and 2 is: (1 point),a. An empty set,b. A real set,c. A finite set,d. An infinite set,d. An infinite set
+35,"35. In an ellipse, the angle between the lines joining the foci with the positive end of the minor axis is a right angle. The eccentricity of the ellipse is: (1 point)",a. 1/√2,b. 1/√3,c. √2,d. √3,a. 1/√2
+36,"36. If |a| = 3, |b| = 5, and |c| = 4, and a + b + c = 0, then the value of a.b + b.c is equal to: (1 point)",a. 0,b. -25,c. 25,d. None,b. -25
+37,37. The equation of a line is (6x - 2)/3 = (3y - 1)/(-1) = (2z - 2)/1. The direction ratios of the line are: (1 point),"a. 1, 2, 3","b. 1, 1, 1","c. 1/3, -1/3, 1/3","d. 1/3, -1/3, 1/3","a. 1, 2, 3"
+38,"38. If Y = sin⁻¹(x/2) + cos⁻¹(x/2), then the value of dy/dx is: (1 point)",a. 1,b. -1,c. 0,d. 2,c. 0
+39,"39. Maximize Z = 4x + 2y, subject to 4x + 2y ≥ 46, x + 3y ≤ 24, and x ≥ 0, y ≥ 0. The maximum value of Z is: (1 point)",a. 46,b. 96,c. 52,d. None,d. None
+40,"40. On one bank of a river, there is a tree. On the other bank, an observer makes an angle of elevation of 60° to the top of the tree. The angle of elevation of the top of the tree at a distance 20 m away from the bank is 30°. The width of the river is: (1 point)",a. 20 meters,b. 10 meters,c. 5 meters,d. 10√3 meters,b. 10 meters
+41,41. √0.0001 is: (1 point),a. An integer number,b. An irrational number,c. A rational number,d. An imaginary number,c. A rational number
+42,"42. If A = [[1/x², x/(4y)]] and B = [[-3/1, 1/0]] and adj(A + B) = [[1/0, 0/1]], then the values of x and y are: (1 point)","a. 1, 1","b. ±(1, 1)","c. 1, 0",d. None,d. None
+43,"43. If tan⁻¹((1 - x) / (1 + x)) = 1/2 tan⁻¹(x), then the value of x is: (1 point)",a. 1/2,b. 1/√3,c. √3,d. 2,b. 1/√3
+44,44. The number of values of k for which (log x)² - log x - log k = 0 has real roots is/are: (1 point),a. 1,b. 2,c. Infinite,d. 4,c. Infinite
+45,45. The value of lim(α→0) [cosec⁻¹(sec α) + cot⁻¹(tan α) + cot⁻¹(cos(sin⁻¹ α) / α)] is: (1 point),a. 0,b. -1,c. -2,d. 1,d. 1
+46,46. The value of ∫₀^(2π) [2 sin x] dx is: (1 point),a. π/3,b. -4π/3,c. 4π/3,d. -π/3,b. -4π/3
+47,47. ∫₀¹⁰ |x * (x - 1)(x - 2)| dx is equal to: (1 point),a. 160.05,b. 1600.5,c. 16.005,d. None,b. 1600.5
+48,48. The value of lim(x→0) (1 + sin x - cos x + log(1 - x)) / (3x) is:,a. -1,b. 1/2,c. -1/2,d. 1,c. -1/2
+49,49. The equation of the tangent to the curve x²/3 - y²/2 = 1 which is parallel to y = x is: (1 point),a. y = x ± 1,b. y = x - 1/2,c. y = x + 1/2,d. y = 1 - x,a. y = x ± 1
+50,"50. If |(z + i) / (z - i)| = 3, then the radius of the circle is: (1 point)",a. 2/√21,3/4,c. √21 / 2,d. √21,3/4
+51,"51. Let f(x) = cos x cos 2x cos 4x cos 8x cos 16x, then the value of f'(π/4) is: (1 point)",a. √2,b. -√2,c. 2,d. -2,a. √2
+52,52. Let (sin a) x² + (sin a) x + (1 - cos a) = 0. The value of a for which the roots of this equation are real and distinct is: (1 point),"a. (0, 2 tan⁻¹(1/4))","b. (0, 2π/3)","c. (0, π)","d. (0, 2π)","a. (0, 2 tan⁻¹(1/4))"
+53,"53. The angle of elevation of the top of a tower from a point on the ground is 30°, and it is 60° when viewed from a point located 40 m away from the initial point towards the tower. The height of the tower is: (1 point)",a. -20√3 m,b. 20/√3 m,c. -20/√3 m,d. 20√3 m,d. 20√3 m
+54,54. The summation of two unit vectors is a third unit vector. Then the modulus of the difference of the unit vectors is: (1 point),a. √3,b. 1 - √3,c. 1 + √3,d. -√3,a. √3
+55,"55. A body falls freely from a point A and passes through points B and C, given that AB = 2BC. The ratio of the time taken by the body to cover the distances AB and BC is: (1 point)",a. (2 + √6) / 2,b. (2 - √6) / 2,c. (√6 - 1),d. (√6 + 1),a. (2 + √6) / 2
+56,56. There is a set of m parallel lines intersecting a set of other n parallel lines in a plane. The number of parallelograms formed is: (1 point),a. m⁻¹C₂ * n⁻¹C₂,b. mC₂ * nC₂,c. m⁻¹C₂ * nC₂,d. mC₂ * n⁻¹C₂,b. mC₂ * nC₂
+57,"57. If in a trial, the probability of success is twice the probability of failure. In six trials, the probability of at least four successes is: (1 point)",a. 496/729,b. 400/729,c. 500/729,d. 600/729,a. 496/729
+58,"58. A force vector m**i** + n**k** is applied to a body at a point P(1, 2, 3). If the moment of the force is perpendicular to 3**i** + 5**j** + 6**k**, then the relation between m and n is: (1 point)",a. n + 3m = 0,b. n + 3m = 1,c. n + 3m = 2,d. n + 3m = 3,a. n + 3m = 0
+59,59. The greatest term in the expansion of (1 + 3x)⁵⁴ where x = 1/3 is: (1 point),a. T₂,b. T₂₅,c. T₂₆,d. T₂₄,b. T₂₅
+60,60. The equation of the family of curves is y² = 4a(x + a). Then the differential equation of the family is: (1 point),a. y = y'x + y² / (4y'x),b. y = y'' + x,c. y = 2y'x + y² / (y'²),d. y'' + y' + y² = 0,a. y = y'x + y² / (4y'x)
+61,"61. If the Arithmetic Mean of two numbers is twice their Geometric Mean, then the ratio of the greatest number to the smallest number is: (1 point)",a. 7 - 4√3,b. 7 + 4√3,c. 21,d. 5,b. 7 + 4√3
+62,62. Let x² + y² - 2x - 6y + 6 = 0 and x² + y² - 6x - 4y + 12 = 0 be two circles. Then the equation of the circle having the diameter as their common chord is: (1 point),a. 5x² + 5y² + 26x - 22y + 54 = 0,b. 5x² + 5y² + 26x + 22y + 54 = 0,c. 5x² + 5y² - 26x - 22y + 54 = 0,d. 5x² + 5y² - 26x - 22y - 54 = 0,c. 5x² + 5y² - 26x - 22y + 54 = 0
+63,"63. For what value of a, f(x) = -x³ + 4ax² + 2x - 5 is decreasing for all x ∈ R: (1 point)","a. (1, 2)","b. (3, 4)",c. R,d. No value of a,d. No value of a
+64,64. The common tangent of the parabolas y² = 4x and x² = -8y is: (1 point),a. y = x + 2,b. y = x - 2,c. y = 2x + 3,d. None,a. y = x + 2
+65,"65. If in projectile motion, the range R is maximum, then the relation between the maximum height H and R is: (1 point)",a. H = R/2,b. H = R/4,c. H = 2R,d. H = R/8,b. H = R/4
+66,66. The foci of the conic section 25x² + 16y² - 150x = 175 are: (1 point),"a. (0, ±3)","b. (0, ±2)","c. (3 ± 3, 0)","d. (0, ±1)","c. (3 ± 3, 0)"
+67,67. A line passes through the point of intersection of the lines 3x + y + 1 = 0 and 2x - y + 3 = 0 and makes equal intercepts with the axes. Then the equation of the line is: (1 point),a. 5x + 5y - 3 = 0,b. x + 5y - 3 = 0,c. 5x - y - 3 = 0,d. 5x + 5y + 3 = 0,a. 5x + 5y - 3 = 0
+68,"68. In r cos θ + i r sin θ, r and θ represent __________ respectively: (1 point)","a. Absolute value of modulus, argument","b. Argument, modulus","c. Modulus, argument","d. Absolute value of modulus, absolute value of argument","c. Modulus, argument"
+69,69. The value of lim(x→0) (4ˣ - 1)³ / (sin(x²/4) * log(1 + 3x)) is: (1 point),a. 4/3 (ln 4)²,b. 4/3 (ln 4)³,c. 3/2 (ln 4)²,d. 3/2 (ln 4)³,b. 4/3 (ln 4)³
+70,70. ∫₀³ |x³ + x² - 3x| dx is equal to: (1 point),a. 171/2,b. 171/4,c. 170/4,d. 170/3,a. 171/2
+71,"71. Let a = [[1, 5], [-5, 1]] and A⁻¹ = xA + yI, then the value of x and y are: (1 point)","a. x = -1, y = 2","b. x = -1, y = -2","c. x = 1, y = 2","d. x = 1, y = -2","a. x = -1, y = 2"
+72,72. A plane x + y + z = -α√3 touches the sphere 2x² + 2y² + 2z² - 2x + 4y - 4z + 3 = 0. The value of α is: (1 point),a. ± 1/√3,b. 1/(2√3),c. 1 - 1/√3,d. 1 + 1/√3,a. ± 1/√3
+73,73. The solution of the differential equation dy/dx + (2x / (1 + x²)) y = 1 / (1 + x²)² is: (1 point),a. y(1 - x²) = tan⁻¹(x) + c,b. y(1 + x²) = tan⁻¹(x) + c,c. y(1 + x²)² = tan⁻¹(x) + c,d. y(1 - x²)² = tan⁻¹(x) + c,b. y(1 + x²) = tan⁻¹(x) + c
+74,74. Σ (r³ - 3r) / r! from r=3 to ∞ is equal to: (1 point),a. 6e,b. 6e/2,c. 9e,d. 9e/2,a. 6e
+75,"75. Let cos(2 tan⁻¹(x)) = 1/2, then the value of x is: (1 point)",a. √3,b. 1/√3,c. 1 - √3,d. 1 - 1/√3,b. 1/√3
+76,"76. If sin⁻¹(a) is the acute angle between the curves x² + y² = 4x and x² + y² = 8 at (2, 2), then a =: (1 point)",a. 1,b. 0,c. 1/√2,d. √3/2,c. 1/√2
+77,77. The maximum area of a rectangle that can be inscribed in a circle of radius 2 units is: (1 point),a. 8π sq. units,b. 4 sq. units,c. 5 sq. units,d. 8 sq. units,d. 8 sq. units
+78,"78. If the length of the subtangent at any point to the curve x yⁿ = a is proportional to the abscissa, then 'n' is: (1 point)",a. Any non-zero real number,b. 2,c. -2,d. 1,d. 1
+79,"79. ∫ (cosⁿ⁻¹(x)) / (sinⁿ⁺¹(x)) dx, n ≠ 0 is: (1 point)",a. cotⁿ(x) / n,b. -cotⁿ⁻¹(x) / (n - 1),c. -cot⁴(x) / n,d. cotⁿ⁻¹(x) / (n - 1),b. -cotⁿ⁻¹(x) / (n - 1)
+80,80. The value of ∫<0xE2><0x82><0x8B>²₁ |x| / x dx is: (1 point),a. 0,b. 1,c. 2,d. 3,a. 0
+81,"81. If sin(x) + sin(y) + sin²(z) = 3π / 2, then the value of x + y + z - 1 / (xyz) is equal to:",0,1,2,3,0
+82,"82. Let p, q, r be the sides opposite to the angles P, Q, R respectively in a triangle PQR. If r² sin(P) sin(Q) = pq, then the triangle is:",Equilateral,Acute angled but not equilateral,Obtuse angled if sin...,Right angled,Right angled
+83,"83. Let p, q, and r be sides opposite to the angles P, Q, R respectively in a triangle PQR. Then 2pr sin( (P - Q + R) / 2 ) equals:",p² + q² + r²,p² + r² - q²,q² + r² - p²,p² + q² - r²,p² + r² - q²
+84,"84. Let P(2, -3), Q(-2, 1) be the vertices of the triangle PQR. If the centroid of ΔPQR lies on the line 2x + 3y = 1, then the locus of R is:",2x + 3y = 9,2x - 3y = 9,3x + 2y = 5,3x - 2y = 5,2x + 3y = 9
+85,"85. If n(A) = m, then n(P(A)) (where P(A) is the power set of A) is:",2,2ⁿ,2ᵐ,2m,2ᵐ
+86,"86. If f is a real-valued differentiable function such that f'(x) < 0 for all real x, then:",f(x) must be an increasing function,f(x) must be a decreasing function,|f(x)| must be an increasing function,|f(x)| must be a decreasing function,f(x) must be a decreasing function
+87,"87. The number of words that can be written using all the letters of the word ""irrational"" is:",10! / (2!)^3,10! / (2!)^2,10! / 2!,10!,10! / (2!)^3
+88,89. Four speakers will address a meeting where speaker Q will always speak after speaker P. Then the number of ways in which the order of speakers can be prepared is:,256,128,24,12,12
+89,90. The number of diagonals in a regular polygon of 100 sides is:,4950,4850,4750,4650,4850
+90,"91. Let the coefficients of powers of x in the 2nd, 3rd and 4th terms in the expansion of (1 + x)^n where n is a positive integer be in arithmetic progression. Then the sum of the coefficients of odd powers of x in the expansion is:",2³,64,128,256,128
+91,92. The sum 1×1! + 2×2! + ......... + 50 × 50! is equal to:,51! - 1,51! + 1,51! × 2,None,51! - 1
+92,93. Six numbers are in AP. Such that their sum is 3 and the first term is 4 times the third term. Then the fifth term is:,-15,-3,9,-4,-3
+93,"94. The solution of 25 d²y / dx² - 10 dy / dx + y = 0, with y(0) = 1, y(1) = 2e^(1/5) is:",y = e^(x/5) + xe^(x/5),y = (1 + x) e^(x/5),y = (1 + x) e^(5x),y = (1 + x) e^(-x/5),y = (1 + x) e^(x/5)
+94,95. Let P be the midpoint of a chord joining the vertex of the parabola y² = 8x to another point on it. Then the locus of P is:,y² = 2x,y² = 4x,x²/4 + y² = 1,x² + y²/4 = 1,y² = 2x
+95,96. The line x = 2y intersects the ellipse x²/4 + y² = 1 at the points P and Q. The equation of the circle with PQ as diameter is:,x² + y² = 1/2,x + y = 1,x² + y² = 2,x² + y² = 5/2,x² + y² = 5/2
+96,97. The eccentric angle in the first quadrant of a point on the ellipse x²/10 + y²/8 = 1 at a distance 3 units from the center of the ellipse is:,π/6,π/4,π/3,π/2,π/4
+97,98. The transverse axis of a hyperbola is along the x-axis and its length is 2a. The vertex of the hyperbola bisects the line segment joining the center and the focus. The equation of the hyperbola is:,6x² - y² = 3a²,x² - 3y² = 3a²,x² - 6y² = 3a²,3x² - y² = 3a²,3x² - y² = 3a²
+98,99. The probability of getting a 5 when one die is rolled is:,1/2,1/3,1/5,1/6,1/6
+99,100. Factorial of -2 is:,0,2,-2,None,None
+100,101. Laser is a device which can produce: (1 point),a. Intense beam of light,b. Coherent beam of light,c. Monochromatic beam of light,d. All of the above,d. All of the above
+101,102. A magnetic needle lying parallel to a magnetic field is turned through 60°. The work done on it is W. The torque required to maintain the magnetic needle in this position is: (1 point),a. √3 W,b. (√3 / 2) W,c. W / 2,d. 2 W,a. √3 W
+102,"103. A parallel plate capacitor has a capacitance of 80 x 10⁻⁶ F with air between the plates. The space between the plates is filled with a dielectric of constant 20. It's connected to a 30 V battery. If the dielectric is removed, the charge passing through the wire is: (1 point)",a. 45.6 x 10⁻³ C,b. 25.3 x 10⁻³ C,c. 120 x 10⁻³ C,d. 0.12 C,a. 45.6 x 10⁻³ C
+103,"104. Four resistors A, B, C, and D form a Wheatstone bridge balanced with C = 100 Ω. If A and B are interchanged, balance is for C = 121 Ω. The value of D is: (1 point)",a. 10 Ω,b. 100 Ω,c. 110 Ω,d. 121 Ω,c. 110 Ω
+104,105. The magnitude of the resultant of two forces is F. The magnitude of each force is also F. The angle between the forces must be: (1 point),a. 30°,b. 60°,c. 45°,d. 120°,d. 120°
+105,"106. A primary coil has a current changing at 25 A per millisecond. If the mutual inductance is 92 x 10⁻⁶ H, the induced EMF in the secondary coil is: (1 point)",a. 4.6 V,b. 2.3 V,c. 0.368 mV,d. 0.23 mV,b. 2.3 V
+106,107. The de Broglie wavelength of an electron moving at 1.5 x 10⁸ m/s is equal to that of a photon. The ratio of the electron's kinetic energy to the photon's energy (c = 3 x 10⁸ m/s) is: (1 point),a. 2,b. 4,c. 1/2,d. 1/4,d. 1/4
+107,108. The maximum kinetic energy of emitted photoelectrons depends on: (1 point),a. Intensity of the incident light,b. Frequency of the incident light,c. Temperature of the photosensitive surface,d. None of the above,b. Frequency of the incident light
+108,109. The half-life of Ra²²⁶ is 1620 years. The number of atoms that decay in one second in 1 gram of radium (Avogadro's number = 6.023 x 10²³) is approximately: (1 point),a. 4.23 x 10⁹,b. 3.16 x 10¹⁰,c. 3.61 x 10¹⁰,d. 2.16 x 10¹⁰,c. 3.61 x 10¹⁰
+109,110. The half-life of a radioactive element is 10 hours. The fraction of the initial radioactivity that will remain after 40 hours is: (1 point),a. 1/2,b. 1/16,c. 1/8,d. 1/4,b. 1/16
+110,"111. In a transistor, given that the common-base current gain (α = Ic / Ie) ranges from 20/21 to 100/101, determine the range of the common-emitter current gain (β = Ic / Ib).  ",a. 1 - 10,b. 0.95 - 0.99,c. 20 - 100,d. 200 - 300,c. 20 - 100
+111,"112. Let [ε₀] denote the dimensional formula of the permittivity of vacuum. If M = mass, L = length, T = time, and A = electric current, then: (1 point)",a. [ε₀] = [M⁻¹ L⁻³ T⁴ A²],b. [ε₀] = [M⁻¹ L² T¹ A⁻²],c. [ε₀] = [M⁻¹ L² T⁻¹ A],d. [ε₀] = [M⁻¹ L⁻³ T² A],a. [ε₀] = [M⁻¹ L⁻³ T⁴ A²]
+112,"113. The gravitational field in a region is E = (5i + 12j) N/kg. The change in gravitational potential energy of a 2 kg particle moved from the origin to (12 m, 5 m) is: (1 point)",a. -225 J,b. -240 J,c. -245 J,d. -250 J,b. -240 J
+113,"114. The time period of a particle in SHM is 8 s. At t = 0, it is at the mean position. The ratio of the distances traveled in the first and second seconds is: (1 point)",a. 1/2,b. 1/√2,c. 1 / (√2 - 1),d. 1/√3,c. 1 / (√2 - 1)
+114,115. A tension of 22 N is applied to a copper wire of cross-sectional area 0.02 cm². Young's modulus is 1.1 x 10¹¹ N/m² and Poisson's ratio is 0.32. The decrease in cross-sectional area will be: (1 point),a. 1.28 x 10⁻⁶ cm²,b. 1.6 x 10⁻⁶ cm²,c. 2.56 x 10⁻⁶ cm²,d. 0.64 x 10⁻⁶ cm²,a. 1.28 x 10⁻⁶ cm²
+115,116. The total energy of a hydrogen atom in its ground state is: (1 point),a. Negative,b. Positive,c. 0,d. None of the above,a. Negative
+116,"117. Water flows from a pipe of internal diameter 'D' into another pipe of the same size through 'n' holes, each of diameter 'd'. If the speed in the first pipe is 'V', the speed leaving the second pipe is: (1 point)",a. (D² V) / (n d²),b. (n D² V) / d²,c. (n d² V) / D²,d. (d² V) / (n d²),a. (D² V) / (n d²)
+117,"118. When a liquid is heated in a copper vessel, its apparent expansion coefficient is 6 x 10⁻⁶ °C⁻¹. In a steel vessel, it's 24 x 10⁻⁶ °C⁻¹. If the linear expansion coefficient for copper is 18 x 10⁻⁶ °C⁻¹, the linear expansion coefficient for steel is: (1 point)",a. 6 x 10⁻⁶ °C⁻¹,b. 12 x 10⁻⁶ °C⁻¹,c. 36 x 10⁻⁶ °C⁻¹,d. 42 x 10⁻⁶ °C⁻¹,b. 12 x 10⁻⁶ °C⁻¹
+118,"119. When the temperature of a body increases from T to T + ΔT, its moment of inertia increases from I to I + ΔI. If α is the linear expansion coefficient, then ΔI / I (neglecting higher orders of α) is:",a. αΔT,b. 2αΔT,c. ΔT/α,d. 2α/ΔT,b. 2αΔT
+119,120. The work done to increase the temperature of one mole of an ideal gas with V ∝ T^(2/3) by 30°C (R = 8.314 J/mol/K) is:,a. 116.2 J,b. 136.2 J,c. 166.2 J,d. 186.2 J,c. 166.2 J
+120,"121. A black body at temperature T₁ radiates power P and maximum energy at λ₁. If the temperature changes to T₂, radiating maximum energy at λ₁/2, the power radiated at T₂ is:",a. 2P,b. 4P,c. 16P,d. 6P,c. 16P
+121,122. Which of the following has the highest energy photon?,a. Visible light,b. X-rays,c. Ultraviolet rays,d. Gamma rays,d. Gamma rays
+122,123. What is the minimum energy required to launch a satellite of mass m from the surface of a planet of mass M and radius R into a circular orbit at an altitude of 2R?,a. 2GmM / 3R,b. GmM / 2R,c. GmM / 3R,d. 5GmM / 6R,d. 5GmM / 6R
+123,"124. When the engine is switched off, a vehicle of mass 'M' moving on a rough horizontal road with momentum P comes to rest due to friction (coefficient μ<0xE2><0x82><0x96>). The distance traveled before rest is:",a. P² / (2 μ<0xE2><0x82><0x96> M² g),b. 2 μ<0xE2><0x82><0x96> M² g / P²,c. P² / (2 μ<0xE2><0x82><0x96> g M),d. P² M² / (2 μ<0xE2><0x82><0x96> g),c. P² / (2 μ<0xE2><0x82><0x96> g M)
+124,"125. A projectile is given an initial velocity of i + 2j (i along ground, j vertical, g = 10 m/s²). The equation of its trajectory is:",a. y = 2x - 5x²,b. 4y = 8x - 20x²,c. 4y = 2x - 25x²,d. y = x - 5x²,a. y = 2x - 5x²
+125,126. The escape velocity from Earth's gravitational field depends upon:,a. Rotation of Earth,b. Mass of the body,c. Radius of Earth,d. Mass of Earth,c. Radius of Earth
+126,"127. If Earth is a sphere of radius R and mass M, its angular momentum about its rotation axis with period T is:",Option 1,Option 2,None,,Option 1
+127,128. The velocity ‘V’ reached by a car of mass ‘m’ at a certain distance from the starting point driven with constant power ‘P’ is such that: (1 point),a. V ∝ (P/m)^(1/3),b. V² ∝ (P/m)^(1/3),c. V³ ∝ (P/m),d. V ∝ (P/m)²,a. V ∝ (P/m)^(1/3)
+128,"129. A particle is projected with a given velocity to pass through a point P at a horizontal distance r. If t₁ and t₂ are the times taken for the two possible trajectories, then t₁t₂ is proportional to: (1 point)",a. 1/r,b. r,c. r²,d. 1/r²,b. r
+129,"130. The sum of the magnitudes of two forces at a point is 16 N. Their resultant, with a magnitude of 8 N, is normal to the smaller force. The magnitudes of the two forces are: (1 point)","a. 6 N, 10 N","b. 8 N, 8 N","c. 4 N, 12 N","d. 2 N, 14 N","a. 6 N, 10 N"
+130,"131. The length of a pendulum is measured as 1.01 m (error 0.01 m), and the time for 30 oscillations is 93 s (error 3 s). The percentage error in the measurement of acceleration due to gravity is: (1 point)",a. 1%,b. 5%,c. 10%,d. 15%,b. 5%
+131,"132. A tension of 20 N is applied to a copper wire of cross-sectional area 0.01 cm². Young's modulus is 1.1 x 10¹¹ N/m², and Poisson's ratio is 0.32. The decrease in the cross-sectional area of the wire is: (1 point)",a. 1.16 x 10⁻⁶ cm²,b. 1.16 x 10⁻⁵ m²,c. 1.16 x 10⁻⁴ m²,d. 1.16 x 10⁻³ cm²,a. 1.16 x 10⁻⁶ cm²
+132,"133. A capillary tube of radius r is in water (mass = 5 x 10⁻³ kg, height h). The same tube is in a liquid with surface tension √2 times that of water and contact angle 45°. The mass of the liquid that rises is: (1 point)",a. 5 x 10⁻³ kg,b. 6 x 10⁻³ kg,c. 5√2 x 10⁻³ kg,d. 3.5 x 10⁻³ kg,a. 5 x 10⁻³ kg
+133,"134. The terminal velocity of a liquid drop of radius 'r' in air is v. If two such drops combine, the terminal velocity of the bigger drop is: (1 point)",a. √2 v,b. 2v,c. ⁴√2 v,d. ²√2 v,c. ⁴√2 v
+134,"135. A 1-liter glass flask is filled with mercury at 0°C and heated to 100°C. (γ_mercury = 1.82 x 10⁻⁴ /°C, α_glass = 0.1 x 10⁻⁴ /°C). The amount of mercury that overflows is: (1 point)",a. 21.2 cc,b. 15.2 cc,c. 2.12 cc,d. 18.2 cc,b. 15.2 cc
+135,"136. On a temperature scale Y, water freezes at -160°Y and boils at -50°Y. A temperature of 340 K is equivalent to: (1 point)",a. -106.3°Y,b. -96.3°Y,c. -86.3°Y,d. -76.3°Y,c. -86.3°Y
+136,"137. A heat engine with a sink at 300 K has an efficiency of 40%. To increase the efficiency to 60% with the same sink temperature, the source temperature must be increased by: (1 point)",a. 750 K,b. 500 K,c. 250 K,d. 1000 K,b. 500 K
+137,138. We can hear sound around corners but cannot see light due to: (1 point),a. Interference,b. Diffraction,c. Polarization,d. Dispersion,b. Diffraction
+138,"139. An air column in a 32 cm long tube closed at one end resonates with a tuning fork. Another tube open at both ends (66 cm) resonates with another fork. If they produce 8 beats/second when sounded together (fundamental frequencies only), the frequencies are: (1 point)","a. 250 Hz, 258 Hz","b. 240 Hz, 248 Hz","c. 264 Hz, 256 Hz","d. 280 Hz, 272 Hz","c. 264 Hz, 256 Hz"
+139,"140. A wire of uniform cross-section A, length l, and resistance R is cut into two equal pieces. The resistivity of each piece will be: (1 point)",a. The same,b. One-fourth,c. Double,d. One-half,a. The same
+140,"141. A microscope has an objective (f = 1.9 cm) and eyepiece (f = 5 cm) 10.5 cm apart. For the image at the least distance of distinct vision (25 cm), the object distance before the objective is: (1 point)",a. 6.2 cm,b. 2.7 cm,c. 21.0 cm,d. 4.17 cm,b. 2.7 cm
+141,142. Fresnel diffraction occurs due to light falling on a small obstacle. The intensity at a point on a screen depends on: (1 point),a. Focal length of the lens used,b. The number of half-period zones superposing,c. The square of the sum of the number of half-period zones,d. The thickness of the obstacle,b. The number of half-period zones superposing
+142,"143. A short bar magnet (M = 4 Am²) in a vibration magnetometer has T = 8 s. Another magnet (M = 8 Am²) has T = 6 s. If the second magnet's moment of inertia is 9 x 10⁻² kg m², the first magnet's moment of inertia is: (1 point)",a. 9 x 10⁻² kg m²,b. 8 x 10⁻² kg m²,c. 5.33 x 10⁻² kg m²,d. 12.2 x 10⁻² kg m²,d. 12.2 x 10⁻² kg m²
+143,"144. Two short bar magnets (M₁ = 1.2 Am², M₂ = 1.0 Am²) are 20 cm apart on a horizontal table with north poles pointing south (common equatorial line). Earth's horizontal field is 3.6 x 10⁻⁵ T. The resultant horizontal magnetic induction at the midpoint is: (1 point)",a. 3.6 x 10⁻⁵ T,b. 1.84 x 10⁻⁴ T,c. 2.56 x 10⁻⁴ T,d. 5.8 x 10⁻⁵ T,b. 1.84 x 10⁻⁴ T
+144,"145. The SI unit of magnetic flux is Weber, which is equal to: (1 point)",a. N m A⁻¹,b. N m² A⁻¹,c. N A m⁻¹,d. N m A⁻²,b. N m² A⁻¹
+145,"146. If E, M, J, and G denote energy, mass, angular momentum, and universal gravitational constant respectively, the quantity with the same dimensions as EJ²/M⁵G² is: (1 point)",a. Time,b. Angle,c. Mass,d. Length,b. Angle
+146,147. The work done in moving an object from the origin to a point with position vector r = 3i + 2j- 5k by a force F = 2i - j- k is: (1 point),a. 1 unit,b. 9 units,c. 13 units,d. 60 units,b. 9 units
+147,148. A particle is projected from the ground with speed v at angle θ. The average velocity between projection and the highest point is: (1 point),a.,b. (v/2) √(1 + 2sin²θ),c. (v/2) √(1 + 3cos²θ),d. v cos θ,a.
+148,149. A ball dropped from 12 m loses 25% of its KE on striking the ground and bounces back to height 'h'. The value of 'h' is: (1 point),a. 3 m,b. 6 m,c. 9 m,d. 12 m,c. 9 m
+149,"150. Two bodies of mass 4 kg (east, 5 m/s) and 5 kg (north, 3 m/s) are moving. The magnitude of the velocity of their center of mass is: (1 point)",a. 25/9 m/s,b. 9/25 m/s,c. √41 / 9 m/s,d. 9 / √41 m/s,c. √41 / 9 m/s
+150,151. A 2.9 kg mass is suspended by a 50 cm string. A 100 g mass moving horizontally at 150 m/s strikes and sticks. The tension when the string is at 60° to the vertical (g = 10 m/s²) is: (1 point),a. 140 N,b. 135 N,c. 125 N,d. 90 N,b. 135 N
+151,"152. The upper half of an inclined plane (angle φ) is smooth, the lower half is rough. A body starts from rest at the top and comes to rest at the bottom. The coefficient of friction for the lower half is: (1 point)",a. 2 tan φ,b. tan φ,c. 2 sin φ,d. 2 cos φ,a. 2 tan φ
+152,153. A body with a moment of inertia of 4 kg m² (initially at rest) has a torque of 8 Nm applied. The work done by the torque in 20 s is: (1 point),a. 40 J,b. 640 J,c. 2560 J,d. 3200 J,d. 3200 J
+153,"154. A uniform circular disc (radius R, angular velocity ω, inertia I) has an identical disc gently placed coaxially on top. The loss in rotational KE due to friction is: (1 point)",a. 1/8 Iω²,b. 1/4 Iω²,c. 1/2 Iω²,d. Iω²,b. 1/4 Iω²
+154,155. The ratio of volumetric strain to volumetric stress is called: (1 point),a. Compressibility,b. Young's modulus,c. Bulk's modulus,d. Shear's modulus,a. Compressibility
+155,"156. The base current changes from 45 μA to 140 μA, causing the collector current to change from 0.2 mA to 4 mA. The current gain (β) is: (1 point)",a. 9.5,b. 1,c. 40,d. 20,c. 40
+156,"157. A U²³⁵ reactor generates 3.70 x 10⁷ J/s. Each fission releases 185 MeV. For 144 x 10⁴ s operation, the mass of fuel needed (N_A = 6 x 10²³, 1 eV = 1.6 x 10⁻¹⁹ J) is approximately: (1 point)",a. 70.5 kg,b. 0.705 kg,c. 13.1 kg,d. 1.31 kg,b. 0.705 kg
+157,158. Fission reaction in U²³⁸ can be produced by: (1 point),a. Fast neutron,b. Slow neutron,c. Thermal neutron,d. All of these,a. Fast neutron
+158,"159. A metal has a work function of 2 eV. If light of wavelength 3000 Å is incident, the maximum KE of photoelectrons (h = 6.6 x 10⁻³⁴ Js, c = 3 x 10⁸ m/s, 1 eV = 1.6 x 10⁻¹⁹ J) is: (1 point)",a. 4.4 x 10⁻¹⁹ J,b. 5.6 x 10⁻¹⁹ J,c. 3.4 x 10⁻¹⁹ J,d. 2.62 x 10⁻¹⁹ J,d. 2.62 x 10⁻¹⁹ J
+159,"160. A photon of wavelength λ₁ causes maximum electron energy E₁. Wavelength changes to λ₂, energy becomes E₂. The value of hc is: (1 point)",a. hc = (E₂ - E₁)λ₁λ₂ / (λ₁ - λ₂),b. hc = (E₁ - E₂)λ₁λ₂ / (λ₂ - λ₁),c. hc = (E₁ + E₂)(λ₂ - λ₁) / (λ₁λ₂),d. hc = (λ₂ - λ₁) / (λ₁λ₂ (E₂ - E₁)),a. hc = (E₂ - E₁)λ₁λ₂ / (λ₁ - λ₂)
+160,"161. According to Dr. Daniel, when the companions of the king saw the king after he had risen from the ground, they said, ______ and we’ll fight again.",It is him,It is he,It is his,It is himself,It is he
+161,"162. When the machines are not lubricated, ______ decreases the speed, putting more load on the lifts.",Then,Than,So,It,It
+162,"163. When the chairman became very ill, his wife began to take a more active role in business activities, and many people believed that ______ and the chairman shared his responsibilities.",Her,She,Herself,Hers,She
+163,"164. Although most species of cat are black in color, ______ is often pure white.",The Iranian cat,Nevertheless the Iranian cat,That the Iranian cat,But the Iranian cat,The Iranian cat
+164,"165. ______, regarded as the world’s oldest continuously inhabited city, is the main city of Punjab.",The Multan,Multan being,Multan,That Multan,Multan
+165,166. Before man invented writing:,Literature was passed on by word of mouth,Prayers were considered literature,Literature was just singing and dancing,There was no literature,Literature was passed on by word of mouth
+166,"167. As for the war songs and prayers, each generation:",Added something of its own to the stock,Blindly repeated the songs and prayers,Composed its own songs and prayers,Repeated what has been handed down to it,Added something of its own to the stock
+167,168. The first war song:,Was inspired by God,Developed spontaneously,Was a song traditionally handed down,Was composed by leading dancers,Developed spontaneously
+168,169. The war song evolved out of:,Creative inspiration,There was no literature,Artistic urge,Yelling and shouting,Yelling and shouting
+169,170. Man invented writing because he wanted:,To be artistic,To write war songs,To write literature,To record and communicate,To record and communicate
+170,171. Iron : blacksmith ::,Cotton : cloth,Food : gourmet,Clay : potter,Silver : miner,Clay : potter
+171,172. Fish : scales ::,Book : papers,Snakes : fangs,Birds : feathers,Car : wheels,Birds : feathers
+172,173. Nose : smell ::,Tongue : speak,Foot : hit,Hand : finger,Teeth : chew,Teeth : chew
+173,174. Collage : images ::,Cement : building,Medley : songs,Furniture : sofa,Grains : tree,Medley : songs
+174,175. Sketch : artist ::,Secret : confident,Cell : prisoner,Palette : painter,Draft : writer,Draft : writer
+175,176. Fragile : (synonym),Strong,Grave,Weak,Showy,Weak
+176,177. Esoteric : (synonym),Fair,Popular,Alluring,Private,Private
+177,178. Synchronized : (antonym),Arrhythmic,Resonating,Harmonized,Brought into accord,Arrhythmic
+178,179. Chaotic : (antonym),Immersive,Orderly,Hectic,Steady,Orderly
+179,180. Bombastic : (antonym),Creative,Selfish,Astounded,Polite,Polite
+180,181. We went to Pace and bought ______ wedding suit for the bride.,New,a new,The new,An new,a new
+181,182. Citizens have the right that everyone should have ______ opportunity to have a job.,An equal,A equal,The equal,Equal,An equal
+182,183. They had an accident in ______ car they painted last month.,An new car,The new car,A new car,New car,The new car
+183,184. ______ is a virtue.,Honesty,An honesty,A honesty,The honesty,Honesty
+184,"185. His ______ father is eighty years old, and he still runs fast.",A,An,The,None,The
+185,186. What is the main thrust of the author?,Traditional systems should be strengthened,Formal education is more important than non-formal,One should never cease to learn,It is impossible to meet the needs of everyone,One should never cease to learn
+186,187. Which of the following describes the purpose of the author?,To criticize the present educational system,To strengthen the present educational practice,To support non-conventional educational organizations,To present a pragmatic point of view,To present a pragmatic point of view
+187,"188. According to the passage, the present education structure assumes which of the following?",All people can be educated as per their needs,Present educational planning is very much practical,Education is a onetime process,Simple rearrangement of the present educational system is a must,Education is a onetime process
+188,189. What should be the measure characteristic of the future educational system?,Different modules with the same function,Same modules for different groups,No modules but standard compulsory program for all,None of these,Different modules with the same function
+189,"190. According to the author, educational plan should attempt to:",Train the people at the core,Encourage conventional schools and colleges,Decide a terminal point to education,Fulfill the educational needs of everyone,Fulfill the educational needs of everyone
+190,191. Iron : blacksmith ::,Cotton : cloth,Food : gourmet,Clay : potter,Silver : miner,Clay : potter
+191,192. Fish : scales ::,Book : papers,Snakes : fangs,Birds : feathers,Car : wheels,Birds : feathers
+192,193. Nose : smell ::,Tongue : speak,Foot : hit,Hand : finger,Teeth : chew,Teeth : chew
+193,194. Collage : images ::,Cement : building,Medley : songs,Furniture : sofa,Grains : tree,Medley : songs
+194,195. Sketch : artist ::,Secret : confident,Cell : prisoner,Palette : painter,Draft : writer,Draft : writer
+195,196. Fragile : (synonym),Strong,Grave,Weak,Showy,Weak
+196,197. Esoteric : (synonym),Fair,Popular,Alluring,Private,Private
+197,198. Synchronized : (antonym),Arrhythmic,Resonating,Harmonized,Brought into accord,Arrhythmic
+198,199. Chaotic : (antonym),Immersive,Orderly,Hectic,Steady,Orderly
+199,200. Bombastic : (antonym),Creative,Selfish,Astounded,Polite,Polite
